@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(17, 17, 17);
+    display: flexbox;
+    font-family: 'Poppins';
+}
+
+.titulo{
+    height: 10vh;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    background: rgb(188, 219, 255);
+    border: 2px solid rgb(69, 150, 255);
+    border-radius: 10px;
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Divide o espaço igualmente em 3 colunas */
+    min-width: 280px; /* Garante que os cards não fiquem muito pequenos */
+}
+
+.card h2{
+    font-size: 32px;
+}
+
+.card p{
+    font-size: 18px;
+}
+.card ul{
+    list-style: disc;
+    text-align: left;
+    margin: 10px 0;
+}
+.card ul li{
+margin-bottom: 5px;
+}
+
+.card button{
+    display: inline-block;
+    background: rgb(5, 5, 153);
+    color: white;
+    padding: 10px 15px;text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: rgb(187, 187, 253);
+}
+
